@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Doble de Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Eddie Plus</h1>
+
+    <div class="player-container">
+        <!-- Reproductor 1 -->
+        <div class="video-wrapper">
+            <h2>Video 1</h2>
+            <video id="video1" width="480">
+                <!-- ¡IMPORTANTE! Reemplaza esto con la ruta a tu primer video -->
+                <source src="The.Simpsons.S36E14.1080p.HEVC.x265-MeGusta.WT11.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="controls">
+                <button id="playPauseBtn1" data-video="video1">Play</button>
+                <label for="volumeSlider1">Volumen:</label>
+                <input type="range" id="volumeSlider1" data-video="video1" min="0" max="1" step="0.05" value="1">
+            </div>
+        </div>
+
+        <!-- Reproductor 2 -->
+        <div class="video-wrapper">
+            <h2>Video 2</h2>
+            <video id="video2" width="480">
+                 <!-- ¡IMPORTANTE! Reemplaza esto con la ruta a tu segundo video -->
+                <source src="The.Simpsons.S36E13.1080p.HEVC.x265-MeGusta.WT11.mp4" type="video/webm">
+                 <!-- Puedes añadir más <source> para diferentes formatos -->
+                <source src="The.Simpsons.S36E14.1080p.HEVC.x265-MeGusta.WT11.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="controls">
+                <button id="playPauseBtn2" data-video="video2">Play</button>
+                <label for="volumeSlider2">Volumen:</label>
+                <input type="range" id="volumeSlider2" data-video="video2" min="0" max="1" step="0.05" value="1">
+            </div>
+        </div>
+    </div>
+    
+    <video src="The.Simpsons.S36E12.1080p.AV1.10bit-MeGusta.WT34.webm" controls="true" height="200x200"></video>
+    <source 
+   ange" id="volumeSlider2" data-video="video2" min="0" max="1" step="0.05" value="1">
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+        background: #181818;
+        color: #fff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 30px;
+        letter-spacing: 2px;
+        color: #e50914;
+        text-shadow: 0 2px 8px #000a;
+    }
+    .player-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px auto;
+        max-width: 1200px;
+        flex-wrap: wrap;
+    }
+    .video-wrapper {
+        background: #222;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px #000a;
+        padding: 24px 24px 16px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        transition: transform 0.2s;
+    }
+    .video-wrapper:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 32px #000c;
+    }
+    .video-wrapper h2 {
+        margin: 0 0 16px 0;
+        font-size: 1.3rem;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    video {
+        border-radius: 10px;
+        box-shadow: 0 2px 12px #0008;
+        margin-bottom: 16px;
+        background: #000;
+    }
+    .controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        justify-content: center;
+    }
+    .controls button {
+        background: #e50914;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 18px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .controls button:hover {
+        background: #b0060f;
+    }
+    .controls label {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .controls input[type="range"] {
+        accent-color: #e50914;
+        width: 100px;
+    }
+    @media (max-width: 1100px) {
+        .player-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-wrapper {
+            width: 90vw;
+            max-width: 500px;
+        }
+    }
+</style>
+
+
+<h2>En Vladimir TV Y Eddie Plus </h2>
+<p>Los mejores videos de la serie Los Simpsons en calidad 1080p y 4k</p>
+<p>Disfruta de los mejores episodios de Los Simpsons en la mejor calidad y con el mejor sonido</p>
+<p>La mejor calidad de video y sonido para disfrutar de tus episodios favoritos de Los Simpsons</p>
